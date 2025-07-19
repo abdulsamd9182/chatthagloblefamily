@@ -83,7 +83,7 @@ export default function App() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="relative flex items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat text-center px-4 pt-32 sm:pt-0"
+        className="relative flex items-center justify-center h-[60vh] sm:min-h-screen bg-cover bg-center bg-no-repeat text-center px-4 pt-32 sm:pt-0"
         style={{ backgroundImage: "url('/image/banner.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/60 z-0" />
