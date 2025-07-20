@@ -88,12 +88,13 @@ export default function App() {
       >
         <div className="absolute inset-0 bg-black/60 z-0" />
         <div className="relative z-10 max-w-xl flex flex-col items-center justify-center h-full py-10">
-          <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-white hover:text-[#e5ca61] transition">
-            United for a Better Future
+          {/* <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-white hover:text-[#e5ca61] transition">
+            
+          </h1> */}
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold leading-relaxed text-center text-white px-4 mb-6">
+            <span className="block">Rooted in rich traditions, united as one global family.</span>
+            
           </h1>
-          <p className="text-base sm:text-lg mb-6 text-white">
-            Bringing together the Chattha Family to support, empower, and grow.
-          </p>
           <div className="flex flex-wrap justify-center gap-2 sm:gap-4 text-sm sm:text-base">
             <a href="https://wa.me/923074718026" target="_blank" rel="noreferrer" className="bg-green-600 hover:bg-green-800 px-4 py-2 sm:px-6 sm:py-3 rounded">
               WhatsApp
