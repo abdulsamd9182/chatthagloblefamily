@@ -30,16 +30,8 @@ export default function App() {
       title: "Provincial President",
       image: "/image/muzzmil.jpg",
     },
-    {
-      name: "Ch Mumtaz Ahmad Chattha",
-      title: "Provincial President",
-      image: "/image/mumtaz.jpg",
-    },
-    {
-      name: "Ch Ghulam Abbas Chattha",
-      title: "Senior Vice President",
-      image: "/image/ghulam.jpg",
-    },
+
+
   ];
 
   const objectives = [
@@ -93,7 +85,7 @@ export default function App() {
           </h1> */}
           <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold leading-relaxed text-center text-white px-4 mb-6">
             <span className="block">Rooted in rich traditions, united as one global family.</span>
-            
+
           </h1>
           <div className="flex flex-wrap justify-center gap-2 sm:gap-4 text-sm sm:text-base">
             <a href="https://wa.me/923074718026" target="_blank" rel="noreferrer" className="bg-green-600 hover:bg-green-800 px-4 py-2 sm:px-6 sm:py-3 rounded">
@@ -112,15 +104,25 @@ export default function App() {
       {/* Members */}
       <section id="members" className="py-20 px-4 bg-black">
         <h2 className="text-3xl text-center font-bold text-[#e5ca61] mb-10">Leadership Team</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
-          {members.map((m, i) => (
-            <div key={i} className="bg-gray-900 rounded-lg p-4 text-center">
-              <img src={m.image} alt={m.name} className="w-20 h-20 rounded-full mx-auto object-cover mb-4" />
-              <h3 className="font-semibold text-lg">{m.name}</h3>
-              <p className="text-sm text-gray-400">{m.title}</p>
-              <p className="text-xs mt-2 text-gray-500 font-bold">Chattha Global Family</p>
-            </div>
-          ))}
+
+        <div className="flex justify-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto justify-center">
+            {members.map((m, i) => (
+              <div
+                key={i}
+                className="bg-gray-900 rounded-lg p-6 w-full sm:w-[300px] mx-auto text-center"
+              >
+                <img
+                  src={m.image}
+                  alt={m.name}
+                  className="w-24 h-24 rounded-full mx-auto object-cover mb-4"
+                />
+                <h3 className="font-semibold text-lg">{m.name}</h3>
+                <p className="text-sm text-gray-400">{m.title}</p>
+                <p className="text-xs mt-2 text-gray-500 font-bold">Chattha Global Family</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
