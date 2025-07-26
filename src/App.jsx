@@ -22,12 +22,12 @@ export default function App() {
   const members = [
     {
       name: "Ch Akmal Saif",
-      title: "Provincial Chairman",
+      title: "Chairman",
       image: "/image/Kamal.jpg",
     },
     {
       name: "Ch Muzammil Muqarrab Chattha",
-      title: "Provincial President",
+      title: "President",
       image: "/image/muzzmil.jpg",
     },
 
