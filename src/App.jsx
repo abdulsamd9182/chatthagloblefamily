@@ -103,28 +103,28 @@ export default function App() {
 
       {/* Members */}
       <section id="members" className="py-20 px-4 bg-black">
-        <h2 className="text-3xl text-center font-bold text-[#e5ca61] mb-10">Leadership Team</h2>
+  <h2 className="text-3xl text-center font-bold text-[#e5ca61] mb-10">Leadership Team</h2>
 
-        <div className="flex justify-center">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto justify-center">
-            {members.map((m, i) => (
-              <div
-                key={i}
-                className="bg-gray-900 rounded-lg p-6 w-full sm:w-[300px] mx-auto text-center"
-              >
-                <img
-                  src={m.image}
-                  alt={m.name}
-                  className="w-24 h-24 rounded-full mx-auto object-cover mb-4"
-                />
-                <h3 className="font-semibold text-lg">{m.name}</h3>
-                <p className="text-sm text-gray-400">{m.title}</p>
-                <p className="text-xs mt-2 text-gray-500 font-bold">Chattha Global Family</p>
-              </div>
-            ))}
-          </div>
+  <div className="flex justify-center">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full max-w-6xl">
+      {members.map((m, i) => (
+        <div
+          key={i}
+          className="bg-gray-900 rounded-lg p-6 text-center w-full"
+        >
+          <img
+            src={m.image}
+            alt={m.name}
+            className="w-24 h-24 rounded-full mx-auto object-cover mb-4"
+          />
+          <h3 className="font-semibold text-2xl">{m.name}</h3>
+          <p className="text-base text-gray-400">{m.title}</p>
+          <p className="text-sm mt-2 text-gray-500 font-bold">Chattha Global Family</p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Objectives */}
       <section id="objectives" className="py-20 px-4 bg-black">
